@@ -11,16 +11,24 @@
 
     <form id="create-task-form" action="#" method="post">
       <label for="new-task-description">Task description:</label>
-      <input type="text" id="new-task-description" name="new-task-description" placeholder="description">
+      <input type="text" id="new-task-description" name="new-task-description" placeholder="description" >
+      <input type="text" id="new-task-duration" name="new-task-duration" placeholder="duration in minutes" >
+      <select class="dropdown" >
+        <option value="">Select something</option>
+        <option value="red">High Priority</option>
+        <option value="yellow">Medium Priority</option>
+        <option value="green">Low Priority</option>
+      </select>
       <input type="submit" value="Create New Task">
     </form>
-
+    
     <div id="list">
       <h2>My Todos</h2>
       <ul id="tasks">
       </ul>
     </div>
 
+    <button type="button" id="delete-button">Delete All</button>
     <script src="./src/index.js"></script>
   </div>
 
